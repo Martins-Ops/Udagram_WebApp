@@ -29,6 +29,7 @@ The infrastructure diagram was made using a diagrammimg application [Lucidchart]
   A "terraform.tfvars" file is an alternative to using the "-var" flag or environment variables. The file defines the variable values used by the script. If the file is named "terraform.tvars" it is loaded by default. Note that this follows a naming convention, that is it cannot be saved as "tf.tfvars"
 
 - **variable.tf**
+
   This file contains the variables defined to be used, to prevent "hardcoding" in the `main.tf`. It can be set as default, otherwise the values are passed into the `terraform.tfvar` file
 
 - **output.tf**
