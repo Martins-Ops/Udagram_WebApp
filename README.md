@@ -11,7 +11,7 @@ The infrastructure diagram was made using a diagrammimg application [Lucidchart]
 
 - **main.tf**
 
-This file contains [resources](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources) needed to be provisioned to deploy the apache web server up and running, the code is written in json format
+  This file contains [resources](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources) needed to be provisioned to deploy the apache web server up and running, the code is written in json format
 
   The resources provisioned as code includes; 
     - VPC
@@ -26,14 +26,14 @@ This file contains [resources](https://registry.terraform.io/providers/hashicorp
 
 - **terraform.tfvars**
 
-A "terraform.tfvars" file is an alternative to using the "-var" flag or environment variables. The file defines the variable values used by the script. If the file is named "terraform.tvars" it is loaded by default. Note that this follows a naming convention, that is it cannot be saved as "tf.tfvars"
+  A "terraform.tfvars" file is an alternative to using the "-var" flag or environment variables. The file defines the variable values used by the script. If the file is named "terraform.tvars" it is loaded by default. Note that this follows a naming convention, that is it cannot be saved as "tf.tfvars"
 
 - **variable.tf**
-This file contains the variables defined to be used, to prevent "hardcoding" in the `main.tf`. It can be set as default, otherwise the values are passed into the `terraform.tfvar` file
+  This file contains the variables defined to be used, to prevent "hardcoding" in the `main.tf`. It can be set as default, otherwise the values are passed into the `terraform.tfvar` file
 
 - **output.tf**
 
-This file outputs the DNS of the load balancer where the application can be found running from a Web Browser
+  This file outputs the DNS of the load balancer where the application can be found running from a Web Browser
 
 ### Prerequisites
 
@@ -46,7 +46,7 @@ The following tools should be installed and working.
 
 ### Deploying the Resources
 
-Run the following command on the local machine configured with aws cli
+Run the following command on the machine configured with aws cli
 
 Creating Resources
 
